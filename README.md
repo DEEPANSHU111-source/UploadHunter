@@ -36,7 +36,7 @@ It helps security researchers and students identify critical issues like:
 
 ```
 UploadHunter/
-├── core/        # Engine (crawler, uploader, executor, analyzer)
+├── core/        # Engine (crawler, uploader, executor, analyzer,mutator)
 ├── modules/     # Attack modules
 ├── payloads/    # Payload files and wordlists
 ├── utils/       # Helper utilities
