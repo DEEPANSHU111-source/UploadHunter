@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UploadHunter Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            padding: 20px;
+        }
+        h1 {
+            color: #38bdf8;
+        }
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        .high { color: #ef4444; }
+        .medium { color: #f59e0b; }
+        .low { color: #22c55e; }
+        .url {
+            color: #38bdf8;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🚀 UploadHunter Scan Report</h1>
+
+<div class="card">
+    <h2>Target</h2>
+    <p class="url">{{ target }}</p>
+</div>
+
+<div class="card">
+    <h2>Findings</h2>
+
+```
+{% for finding in findings %}
+<div class="card">
+    <h3>{{ finding.type }}</h3>
+    <p><strong>URL:</strong> <span class="url">{{ finding.url }}</span></p>
+    <p><strong>Payload:</strong> {{ finding.payload }}</p>
+    <p><strong>Status:</strong> {{ finding.status }}</p>
+    <p><strong>Severity:</strong> 
+        <span class="{{ finding.severity | lower }}">
+            {{ finding.severity }}
+        </span>
+    </p>
+</div>
+{% endfor %}
+```
+
+</div>
+
+</body>
+</html>

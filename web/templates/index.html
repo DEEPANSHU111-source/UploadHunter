@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UploadHunter Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #22c55e;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🚀 UploadHunter Dashboard</h1>
+
+<div id="results"></div>
+
+<script>
+fetch("/api/report")
+.then(res => res.json())
+.then(data => {
+    let html = "";
+
+    if (!data.results) {
+        html = "<p>No results found</p>";
+    } else {
+        data.results.forEach(r => {
+            html += `
+                <div class="card">
+                    <b>File:</b> ${r.filename} <br>
+                    <b>Status:</b> ${r.status} <br>
+                    <b>Location:</b> ${r.path || "Not Found"}
+                </div>
+            `;
+        });
+    }
+
+    document.getElementById("results").innerHTML = html;
+});
+</script>
+
+</body>
+</html>

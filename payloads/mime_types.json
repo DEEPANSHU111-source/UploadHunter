@@ -1,0 +1,42 @@
+{
+  "php": [
+    "image/jpeg",
+    "image/png",
+    "image/gif",
+    "text/plain",
+    "application/octet-stream"
+  ],
+  "phtml": [
+    "image/jpeg",
+    "image/png"
+  ],
+  "phar": [
+    "image/jpeg",
+    "application/octet-stream"
+  ],
+  "jsp": [
+    "image/jpeg",
+    "text/plain"
+  ],
+  "asp": [
+    "image/jpeg",
+    "image/png"
+  ],
+  "aspx": [
+    "image/jpeg",
+    "application/octet-stream"
+  ],
+  "svg": [
+    "image/svg+xml",
+    "text/xml",
+    "application/xml"
+  ],
+  "html": [
+    "text/html",
+    "image/jpeg"
+  ],
+  "js": [
+    "application/javascript",
+    "text/plain"
+  ]
+}

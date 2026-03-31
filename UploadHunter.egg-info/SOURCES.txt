@@ -1,0 +1,8 @@
+README.md
+setup.py
+UploadHunter.egg-info/PKG-INFO
+UploadHunter.egg-info/SOURCES.txt
+UploadHunter.egg-info/dependency_links.txt
+UploadHunter.egg-info/entry_points.txt
+UploadHunter.egg-info/requires.txt
+UploadHunter.egg-info/top_level.txt

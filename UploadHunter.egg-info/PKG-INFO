@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: UploadHunter
+Version: 1.0
+Summary: Advanced File Upload Vulnerability Scanner
+Author: Deepanshu Deswal
+Requires-Python: >=3.8
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
