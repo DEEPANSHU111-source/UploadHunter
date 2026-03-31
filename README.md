@@ -49,7 +49,7 @@ UploadHunter/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourusername/UploadHunter.git
+git clone https://github.com/DEEPANSHU111-source/UploadHunter.git
 cd UploadHunter
 pip install -r requirements.txt
 ```
