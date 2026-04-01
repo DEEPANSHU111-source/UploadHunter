@@ -129,3 +129,6 @@ UploadHunter automates:
 * Verification
 
 Making it easier to find real-world vulnerabilities.
+
+## License
+This project is licensed under the MIT License.
